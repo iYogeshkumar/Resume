@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .container{
+            width: 60%;
+            height: 100vh;
+            margin: auto;
+            border: 2px solid red;
+
+        }
+        .header{
+            width: 100%;
+            height: 25%;
+            background-color:#2c3c54;
+            display: flex;
+            gap:20px;
+            border: 2px solid yellow;
+           
+        }
+        .image{
+            width: 100%;
+            border-radius: 50%;
+            padding: 25px;
+            margin-left: 20px;
+        }
+        .header-image{
+            width: 200px;
+            height: 200px;
+            border:2px solid black
+        }
+        .header-text{
+            margin: auto;
+            width: 50%;
+            border:2px solid black;
+            color: white;
+            line-height:20px;
+            
+        }
+        .name-text{
+            font-size: 35px;
+            
+        }
+       .section{
+        width:100%;
+        border:2px solid teal;
+        /* height: 70vh; */
+        display: flex;
+        gap:20px;
+       }
+       .section1{
+        width:40%;
+        border:2px solid green
+       }
+       .section2{
+        width: 60%;
+        border:2px solid green
+       }
+       .contact-details{
+        width:90%;
+        height:200px;
+        border:2px solid blue;
+        margin: auto;
+        margin-top: 65px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+       }
+       .contact{
+        width:100%;
+        height:20px;
+        border:2px solid blue;
+        display: flex;
+        gap: 8px;
+       }
+       .icon{
+        font-size:20px
+       }
+       a{
+        color: black;
+       }
+       .professional-exp{
+        width:90%;
+        /* height:200px; */
+        border: 2px solid brown;
+        margin: auto;
+        
+        
+       }
+       .line{
+        width:100%;
+        border: 1px solid #2c3c54;
+        margin-top: -20px;
+       }
+       .tech-line{
+        width:60%;
+        border: 1px solid #2c3c54;
+        margin-top: -20px;
+        
+       }
+       .soft-line{
+        width:40%;
+        border: 1px solid #2c3c54;
+        margin-top: -20px;
+       }
+       .achievement-line{
+        width:55%;
+        border: 1px solid #2c3c54;
+        margin-top: -20px;
+       }
+       li{
+        line-height: 18px;
+       }
+       .years{
+        line-height: 15px;
+        margin-top:5px;
+       
+        
+       }
+       .para{
+        margin:3px;
+        
+       }
+       .prop-exp{
+        margin-top:5px;
+        
+       }
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- header section -->
+        <div class="header">
+            <div class="header-image">
+                <img class="image" src="./profileimg.jpg" alt="pic"/>
+            </div>
+            <div class="header-text">
+                <h1 class="name-text">YOGESH KUMAR</h1>
+                <h3 class="role-name">Full-Stack Web Developer</h3>
+            </div>    
+        </div>
+        <!-- header section end -->
+
+        <div class="section">
+            <div class="section1">
+                <!-- contact -->
+                <div class="contact-details">
+                    <div class="contact">
+                        <div class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
+                        <div>iamyogeshkumar21@gmail.com</div>
+                    </div>
+                    <div class="contact">
+                        <div class="icon"><i class="fa fa-linkedin-square" aria-hidden="true"></i></div>
+                        <div><a href="https://www.linkedin.com/in/yogeshkumar21101995/">linkedin.com/in/yogeshkumar21101995</a></div>
+                    </div>
+                    <div class="contact">
+                        <div class="icon"><i class="fa fa-github" aria-hidden="true"></i></div>
+                        <div class="link-tag"><a href="https://github.com/iYogeshkumar">https://github.com/iYogeshkumar</a></div>
+                    </div>
+                    <div class="contact">
+                        <div class="icon"><i class="fa fa-briefcase" aria-hidden="true"></i></div>
+                        <div>Portfolio - <span><a href="https://yogeshkumar-iota.vercel.app/">https://yogeshkumar-iota.vercel.app/</a></span></div>
+                    </div>
+                    <div class="contact">
+                        <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                        <div>Bengaluru, Karnataka</div>
+                    </div>
+                    <div class="contact">
+                        <div class="icon"><i class="fa fa-phone-square" aria-hidden="true"></i>
+                        </div>
+                        <div>+91-8073344173/9742224461</div>
+                    </div>
+                </div>
+                <!-- contact-end -->
+                <!-- professional-exp -->
+                <div class="professional-exp">
+                    <h2 class="prop-exp">Professional Experience</h2>
+                    <div class="line"></div>
+                    <ul class="ul">
+                        <li class="li">Jain Irrigation System Ltd, Jalgaon -
+                            Maharashtra</li>
+                        <p class="years">Executive engineer-JULY 2018 -JULY 2020</p>
+                        <li class="li">Swachhtech Appliances Private Limited -
+                            Patna, Bihar</li>
+                            <p class="years">Quality Engineer-Sept 2020 - Oct 2021</p>
+                    </ul>
+                </div>
+
+                <!-- Technical skills section -->
+                <div class="professional-exp">
+                    <h2 class="prop-exp">Technical Skills</h2>
+                    <div class="tech-line"></div>
+                    <p class="para">HTML | CSS | JavaScript | React | Redux |</p>
+                    <p class="para">Node JS | MongoDB | Express JS</p>
+                    <p class="para">Data Structures & Algorithm</p>
+
+                </div>
+                  <!-- Technical skills section end -->
+
+                  <!-- soft-skills section -->
+                  <div class="professional-exp">
+                    <h2 class="prop-exp">Soft Skills</h2>
+                    <div class="soft-line"></div>
+                    <ul>
+                        <li>Decision making</li>
+                        <li>Team collaboration</li>
+                        <li>Remote Work</li>
+                    </ul>
+                  </div>
+                  <!-- soft-skills section end -->
+
+                  <!-- interest section -->
+                  <div class="professional-exp">
+                    <h2 class="prop-exp">Interests</h2>
+                    <div class="soft-line"></div>
+                    <ul>
+                        <li>Cricket</li>
+                        <li>Badminton</li>
+                        <li>Exploring new places</li>
+                    </ul>
+                  </div>
+                  <!-- interest section end-->
+
+                  <!-- achievements section  -->
+                  <div class="professional-exp">
+                    <h2 class="prop-exp">Achievements</h2>
+                    <div class="achievement-line"></div>
+                    <ul>
+                        <li>Selected for the SECOND LEVEL in National
+                            Engineering Competition of KPIT SPARKLE-2016</li>
+                        <li>Presented STATE LEVEL SCIENCE CONGRESS
+                            2010 in Arunachal Pradesh</li>
+                        <li>Secured FIRST PRIZE in DISTRICT LEVEL SCIENCE
+                            CONGRESS 2010 in Arunachal Pradesh</li>
+                        <li>Secured FIRST PRIZE in DISTRICT LEVEL SCIENCE
+                            EXHIBITION 2011 & 2012 in Arunachal Pradesh</li>
+                    </ul>
+                  </div>
+                  <!-- achievements section end  -->
+            </div>
+
+            <div class="section2"></div>
+        </div>
+    </div>
+</body>
+</html>
