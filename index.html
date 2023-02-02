@@ -9,18 +9,18 @@
     <style>
         .container{
             width: 60%;
-            height: 100vh;
+            /* height: 100vh; */
             margin: auto;
-            border: 2px solid red;
+            border: 2px solid #2c3c54;
 
         }
         .header{
             width: 100%;
-            height: 25%;
+            height: 180px;
             background-color:#2c3c54;
             display: flex;
             gap:20px;
-            border: 2px solid yellow;
+            /* border: 2px solid yellow; */
            
         }
         .image{
@@ -32,12 +32,12 @@
         .header-image{
             width: 200px;
             height: 200px;
-            border:2px solid black
+            /* border:2px solid black */
         }
         .header-text{
             margin: auto;
             width: 50%;
-            border:2px solid black;
+            /* border:2px solid black; */
             color: white;
             line-height:20px;
             
@@ -48,23 +48,23 @@
         }
        .section{
         width:100%;
-        border:2px solid teal;
+        /* border:2px solid teal; */
         /* height: 70vh; */
         display: flex;
         gap:20px;
        }
        .section1{
         width:40%;
-        border:2px solid green
+        /* border:2px solid green */
        }
        .section2{
         width: 60%;
-        border:2px solid green
+        /* border:2px solid green */
        }
        .contact-details{
         width:90%;
         height:200px;
-        border:2px solid blue;
+        /* border:2px solid blue; */
         margin: auto;
         margin-top: 65px;
         display: flex;
@@ -74,9 +74,10 @@
        .contact{
         width:100%;
         height:20px;
-        border:2px solid blue;
+        /* border:2px solid blue; */
         display: flex;
         gap: 8px;
+        margin-bottom: -1px;
        }
        .icon{
         font-size:20px
@@ -87,19 +88,26 @@
        .professional-exp{
         width:90%;
         /* height:200px; */
-        border: 2px solid brown;
+        /* border: 2px solid brown; */
         margin: auto;
+        margin-top: 18px;
         
         
        }
        .professional-summary{
+        width:100%;
+        /* height:200px; */
+        /* border: 2px solid brown; */
+        margin: auto;
+       }
+       .projects{
         width:95%;
         /* height:200px; */
-        border: 2px solid brown;
+        /* border: 2px solid brown; */
         margin: auto;
        }
        .line{
-        width:100%;
+        width:90%;
         border: 1px solid #2c3c54;
         margin-top: -20px;
        }
@@ -134,11 +142,51 @@
        }
        .para{
         margin:3px;
+        margin-top: 5px;
         
        }
        .prop-exp{
         margin-top:5px;
         
+       }
+       .project-line{
+        width:20%;
+        border: 1px solid #2c3c54;
+        margin-top: -20px;
+       }
+       .project-name{
+        font-weight:bold;
+        font-size: 20px;
+        line-height: 40px;
+        
+       }
+       .features{
+        font-weight:bold;
+        line-height: 6px;
+       }
+       .description{
+        margin-top: -1px;
+       }
+       .frontend{
+        margin-left:20px;
+        margin-top: 12px;
+        line-height: 1px;
+       }
+       .coll{
+        margin-top:3px
+       }
+       .down{
+        margin-top:13px;
+        margin-left: 3px;
+       }
+       .role-name{
+        font-weight:bold;
+        font-size:25px;
+       }
+       .footer{
+        width: 100%;
+        height: 20px;
+        background-color:#2c3c54;
        }
        
     </style>
@@ -176,15 +224,16 @@
                     <div class="contact">
                         <div class="icon"><i class="fa fa-briefcase" aria-hidden="true"></i></div>
                         <div>Portfolio - <span><a href="https://yogeshkumar-iota.vercel.app/">https://yogeshkumar-iota.vercel.app/</a></span></div>
+
                     </div>
                     <div class="contact">
-                        <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
-                        <div>Bengaluru, Karnataka</div>
+                        <div class="icon down"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                        <div class="down">Bengaluru, Karnataka</div>
                     </div>
                     <div class="contact">
-                        <div class="icon"><i class="fa fa-phone-square" aria-hidden="true"></i>
+                        <div class="icon down"><i class="fa fa-phone-square" aria-hidden="true"></i>
                         </div>
-                        <div>+91-8073344173/9742224461</div>
+                        <div class="down">+91-8073344173/9742224461</div>
                     </div>
                 </div>
                 <!-- contact-end -->
@@ -291,9 +340,46 @@
 
                 </div>
                 <!-- Education Background end -->
+                <!-- projects -->
+                
+                    <h2 class="prop-exp">Projects
+                    </h2>
+                    <div class="project-line"></div>
+                    <a class="project-name" href="https://github.com/iYogeshkumar/Lose-it-clone">Clone of loseit.com | <span><i class="fa fa-github icon" aria-hidden="true"></i></span></a>
+                    <p class="description">Lose It! is a calorie counter & food diary diet website/App that
+                        helps you stick to your diet and achieve weight loss that fits!</p>
+                    <p class="features">Features:</p>
+                    <li>Login | Signup | User Authentication</li>
+                    <li>Job Portal Page with react-slick slider functionality</li>
+                    <li>Landing Page | Calories counting Page</li>
+                    <li>How it works Page | After Login Page</li>
+                    <p>Tech Stack: React | Redux | Mongodb | Express-js | Node-js | CSS</p>
+                    <p class="features">Areas of responsibility:</p>
+                    <li>Built Login Page with authentication and integrated it with the
+                        </li>
+                        <p class="frontend">frontend</p>
+                    <li>Developed a complete How it works page using chakra ui</li>
+                    <p class="coll">A collaborative project built by a team of 4, executed in 5 days.</p>
+                
+                <a class="project-name" href="https://github.com/iYogeshkumar/Big-Basket-Clone">Clone of bigbasket.com | <span><i class="fa fa-github icon" aria-hidden="true"></i></span></a>
+                    <p class="description">A web application to purchase grocery items.</p>
+                    <p class="features">Features:</p>
+                    <li>Social Signin | Signup | Login</li>
+                    <li>Filter functionality of price</li>
+                    <li>Product adding , deleting and sorting functionality</li>
+            
+                    <p>Tech Stack: HTML | CSS | Javascript</p>
+                    <p class="features">Areas of responsibility:</p>
+                    <li>Built authentication and integrated it with the frontend
+                        </li>
+                        
+                    <li>Random OTP generation</li>
+                    <li>Developed Login/Signup Page</li>
+                    <p class="coll">A collaborative project built by a team of 6, executed in 6 days.</p>
 
             </div>
         </div>
+        <div class="footer"></div>
     </div>
 </body>
 </html>
