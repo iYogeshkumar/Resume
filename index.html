@@ -189,7 +189,61 @@
         height: 20px;
         background-color:#2c3c54;
        }
+       @media all and (min-width:50px) and (max-width:380px){
+        .container{
+            width: 100%;
+        }
+        .section{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+           
+            
+        }
+        .down{
+        margin-top:13px;
+        margin-left: 3px;
+       }
+       .contact-details{
+        display: grid;
+            grid-template-columns: repeat(1,1fr);
+       }
+       
+       .image{
+            width: 60%;
+            border-radius: 50%;
+            padding: 25px;
+            margin-left: 20px;
+            margin-top: 25px;
+        }
+        .name-text{
+            font-size: 18px;
+            
+        }
+        .header-text{
+            width: 100%;
+            
+        }
+        .role-name{
+            /* width: 100%; */
+            font-size:15px
+        }
 
+        
+       }
+       @media all and (min-width:380px) and (max-width:600px){
+        .container{
+            /* width: 50%;
+            margin: auto; */
+        }
+        .section{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            margin: auto;
+            width: 100%;
+            margin-left: 50px;
+            
+        }
+       }
             
 
        @media all and (min-width:380px) and (max-width:600px){
@@ -283,12 +337,12 @@
         width:300px;
        }
     }
-    @media all and (min-width:768px) and (max-width:992px){
+    @media all and (min-width:768px) and (max-width:1000px){
        .container{
         width:100%;
        }
     }
-       
+    
     </style>
 </head>
 <body>
