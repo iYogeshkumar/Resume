@@ -130,6 +130,7 @@
        li{
         line-height: 18px;
        }
+       
        .years{
         line-height: 15px;
         margin-top:5px;
@@ -191,11 +192,37 @@
 
             
 
-       @media all and (min-width:50px) and (max-width:380px){
+       @media all and (min-width:380px) and (max-width:600px){
+        .container{
+            width: 100%;
+            margin:auto
+        }
         .section{
             display: grid;
             grid-template-columns: repeat(1,1fr);
+            margin: auto;
+            width: 50%;
+            margin-left: 50px;
             
+        }
+        .header-text{
+            width: 100%;
+        }
+        .name-text{
+            font-size: 25px;
+            width: 90%;
+            
+        }
+        .role-name{
+            width: 100%;
+            font-size:20px
+        }
+        .image{
+            width: 70%;
+            border-radius: 50%;
+            padding: 25px;
+            margin-left: 20px;
+            margin-top: 20px;
         }
         .down{
         margin-top:13px;
@@ -205,21 +232,16 @@
         display: grid;
             grid-template-columns: repeat(1,1fr);
        }
-       
-       .image{
-            width: 30%;
-            border-radius: 50%;
-            padding: 25px;
-            margin-left: 20px;
-        }
-        .name-text{
-            font-size: 25px;
-            
-        }
+       .professional-exp{
+        width:300px
+       }
+       .professional-summary{
+        width:300px;
+       }
 
         
        }
-       @media all and (min-width:380px) and (max-width:700px){
+       @media all and (min-width:600px) and (max-width:768px){
         .section{
             display: grid;
             grid-template-columns: repeat(1,1fr);
@@ -228,9 +250,17 @@
             margin-left: 50px;
             
         }
+        .header-text{
+            width: 70%;
+        }
         .name-text{
             font-size: 25px;
+            width: 90%;
             
+        }
+        .role-name{
+            width: 100%;
+            font-size:20px
         }
         .image{
             width: 70%;
@@ -245,6 +275,17 @@
        .contact-details{
         display: grid;
             grid-template-columns: repeat(1,1fr);
+       }
+       .professional-exp{
+        width:300px
+       }
+       .professional-summary{
+        width:300px;
+       }
+    }
+    @media all and (min-width:768px) and (max-width:992px){
+       .container{
+        width:100%;
        }
     }
        
@@ -400,7 +441,7 @@
                 </div>
                 <!-- Education Background end -->
                 <!-- projects -->
-                
+                <div class="professional-summary">
                     <h2 class="prop-exp">Projects
                     </h2>
                     <div class="project-line"></div>
@@ -414,9 +455,9 @@
                     <li>How it works Page | After Login Page</li>
                     <p>Tech Stack: React | Redux | Mongodb | Express-js | Node-js | CSS</p>
                     <p class="features">Areas of responsibility:</p>
-                    <li>Built Login Page with authentication and integrated it with the
+                    <li>Built Login Page with authentication and integrated it with frontend
                         </li>
-                        <p class="frontend">frontend</p>
+                        <!-- <p class="frontend">frontend</p> -->
                     <li>Developed a complete How it works page using chakra ui</li>
                     <p class="coll">A collaborative project built by a team of 4, executed in 5 days.</p>
                 
@@ -435,7 +476,7 @@
                     <li>Random OTP generation</li>
                     <li>Developed Login/Signup Page</li>
                     <p class="coll">A collaborative project built by a team of 6, executed in 6 days.</p>
-
+                </div>
             </div>
         </div>
         <div class="footer"></div>
